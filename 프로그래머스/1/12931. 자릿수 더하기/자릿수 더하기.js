@@ -1,18 +1,19 @@
 //24.1.21
 //숫자 각각을 배열에 담아주고 배열 각 요소의 합
-//사용메서드: split(''), String(), Number()
-let result=0; // 결과
+
+let result=0; 
 function solution(n){
-let toString = String(n)
-console.log(typeof toString) //string
-const StringArr = toString.split('')
-console.log(StringArr) //[ '1', '2', '3' ]
+    // (n+'') => 숫자를 문자열로
+const StringArr = (n+'').split('')
 const numArr = StringArr.map((item)=>{
-   return Number(item)
+   return + item
+        // (+ item) => 문자를 숫자로
 })
-console.log(numArr) //[ 1, 2, 3 ]
-numArr.forEach((item)=>{
-result += item
+numArr.forEach((item)=>{result += item
 })
-return result
+    return result
 }
+
+//사용할 수 있는 메서드: split(''), Number()=> +, String()=>+''
+// console.log(StringArr) [ '1', '2', '3' ]
+// console.log(numArr) [ 1, 2, 3 ]
