@@ -10,5 +10,9 @@ function solution(a, b) {
     }
 return result
 }
-
+// 진짜..신박한 풀이라 가져왔어요..
+// function adder(a, b){
+//     var result = 0
+//     return (a+b) * (Math.abs(a-b)+1) / 2;
+// }
 
