@@ -10,23 +10,6 @@ for(let i=0; i<=number.length-1; i++){
             }
         }
     }
-// i = 0일때 x=1, y=2
+// i = 0일때 x=1, y=2 부터 시작해서 끝까지 돌아
     return count
 }
-
-
-
-
-
-// function solution(number) {
-//     let twoArr = []
-//     let two = 0
-//     for (let i = 0; i<number.length-1; i++){
-//         for(let y=i; y<=i+1; y++){
-//            two += number[y]
-//         }
-//         twoArr.push(two)
-//         two = 0
-//     }
-// return twoArr
-// }
